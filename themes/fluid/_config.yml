@@ -28,7 +28,7 @@ highlight: # 代码高亮
 fun_features: # 一些好玩的功能
   typing: # 为 subtitle 添加打字机效果
     enable: true
-    typeSpeed: 70  # 打印速度，数字越大越慢
+    typeSpeed: 100  # 打印速度，数字越大越慢
     cursorChar: "_" # 游标字符
     loop: false # 是否循环播放效果
   anchorjs: # 为文章内容中的标题添加锚图标
@@ -38,7 +38,7 @@ fun_features: # 一些好玩的功能
     visible: hover # 默认悬浮显示，可选：hover（鼠标在元素上悬浮时显示） | always（一直显示） | touch（移动端触摸显示）
     icon: "" # 可选：§ | # | ❡ 等，留空则为默认效果
   mouse_click:  # 鼠标点击动效
-    enable: false
+    enable: true
     style: values # 目前设置两个值：values（价值观词汇） | love（爱心）
 
 dark_mode:   # 主题暗色模式，开启后菜单中会出现切换按钮，用户浏览器会存储切换选项，并且会遵循 prefers-color-scheme 自动切换
@@ -180,7 +180,7 @@ index:
   post_default_img: '' # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
-    text: '宽为限 紧用功 工夫到 滞塞通'  # 为空则按 hexo config.subtitle 显示
+    text: '温故而知新，可以为师矣。'  # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
     enable: true
   post_url_target: _self  # available: _blank | _self
@@ -331,7 +331,7 @@ archive:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  # 打字机内容
+  subtitle:  岁寒，然后知松柏之后凋也。 # 打字机内容
 
 #---------------------------
 # 分类归档页
@@ -341,7 +341,7 @@ category:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  # 打字机内容
+  subtitle:  君子坦荡荡，小人长戚戚。 # 打字机内容
   post_limit: 10  # 单个分类中折叠展示文章数的最大值，超过限制会显示 More
   order_by: '-length'  # 排序字段，前面带减号是倒序，不带减号是正序，可选项：name | length
 
@@ -353,7 +353,7 @@ tag:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  # 打字机内容
+  subtitle:  君子不器。 # 打字机内容
   tagcloud: # 标签云
     min_font: 15
     max_font: 30
@@ -370,7 +370,7 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  不懂硬件的前端不是一个好后台 # 打字机内容
+  subtitle:  吾日三省吾身，为人谋而不忠乎？与朋友交而不信乎？传不习乎？ # 打字机内容
   avatar: /img/avatar.png # 头像
   name: Rubin
   introduce: '兴趣比较杂，开此博客也是希望在今后的时间里能对知识有所积累，整理，精进。 加油！向前~ 🏆🏁🚧🏃' # 支持 HTML
@@ -398,7 +398,7 @@ links:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  友链/收藏 # 打字机内容
+  subtitle:  有朋自远方来，不亦乐乎？ # 打字机内容
   items:  # intro 与 image 可省略
     - {
       title: 'Scala 库索引',
