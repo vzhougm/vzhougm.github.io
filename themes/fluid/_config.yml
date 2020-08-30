@@ -120,7 +120,7 @@ version:  # 主题版本相关
 # Header
 #---------------------------
 navbar:
-  blog_title: 唯重 # 导航栏左侧的标题，为空则按 hexo config.title 显示
+  blog_title: 三生万物 # 导航栏左侧的标题，为空则按 hexo config.title 显示
   ground_glass:  # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
     enable: true
     px: 3  # 模糊像素，只能为数字，数字越大模糊度越高
@@ -131,7 +131,7 @@ navbar:
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    #- { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
+    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
 
 search: # 搜索栏，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件。
   enable: true
@@ -370,14 +370,13 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  # 打字机内容
+  subtitle:  不懂硬件的前端不是一个好后台 # 打字机内容
   avatar: /img/avatar.png # 头像
   name: Rubin
-  introduce: '有时会迷茫，一直在前进。还有方向很重要！' # 支持 HTML
+  introduce: '兴趣比较杂，开此博客也是希望在今后的时间里能对知识有所积累，整理，精进。 加油！向前~ 🏆🏁🚧🏃' # 支持 HTML
   icons: # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，class 代表图标的 css class
-    - { class: 'iconfont icon-github-fill', link: 'https://github.com', tip: 'GitHub' }
-    - { class: 'iconfont icon-douban-fill', link: 'https://douban.com', tip: '豆瓣' }
-    - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/vzhougm/', tip: 'GitHub' }
+    - { class: 'iconfont icon-wechat-fill', qrcode: '/img/wx.jpg' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
 
 
 #---------------------------
@@ -399,23 +398,65 @@ links:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  # 打字机内容
+  subtitle:  友链/收藏 # 打字机内容
   items:  # intro 与 image 可省略
     - {
-      title: 'Fluid Docs',
-      intro: '主题使用指南',
-      link: 'https://hexo.fluid-dev.com/docs/',
-      image: '/img/favicon.png'
+      title: 'Scala 库索引',
+      intro: 'The Scala Library Index',
+      link: 'https://index.scala-lang.org/',
+      image: 'https://index.scala-lang.org/assets/img/apple-touch-icon.png'
     }
     - {
-      title: 'Fluid Repo',
-      intro: '主题 GitHub 仓库',
-      link: 'https://github.com/fluid-dev/hexo-theme-fluid',
-      image: '/img/favicon.png'
+      title: 'Scala 文档',
+      intro: 'Scala Documentation',
+      link: 'https://docs.scala-lang.org/zh-cn/',
+      image: 'https://docs.scala-lang.org/resources/img/scala-spiral-3d-2-toned-down.png'
     }
     - {
-      title: 'Fluid Example',
-      intro: '主题操作示例',
-      link: 'https://hexo.fluid-dev.com/docs/example/',
-      image: '/img/favicon.png'
+      title: 'Akka 文档',
+      intro: 'Akka Documentation',
+      link: 'https://akka.io/docs/',
+      image: 'https://akka.io/resources/favicon-32x32.png'
+    }
+    - {
+      title: 'Maven 仓库',
+      intro: 'Maven Central Repository Search',
+      link: 'https://search.maven.org/',
+      image: 'https://search.maven.org/favicon.ico?v=3'
+    }
+    - {
+      title: '蛙蛙工具',
+      intro: '便捷的在线工具网站',
+      link: 'https://www.iamwawa.cn/daxiaoxie.html',
+      image: 'https://www.iamwawa.cn/Public/img/favicon.png'
+    }
+    - {
+      title: 'Flutter 实战',
+      intro: 'Flutter 中文网开源的电子书',
+      link: 'https://book.flutterchina.club/',
+      image: 'https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/favicon.png'
+    }
+    - {
+      title: 'Flutter 中文社区',
+      intro: 'Flutter 中文社区',
+      link: 'https://flutter.cn/',
+      image: 'https://flutter.cn/favicon.ico'
+    }
+    - {
+      title: 'Ant Design Vue',
+      intro: 'ant design vue 官网',
+      link: 'https://www.antdv.com/docs/vue/introduce-cn/',
+      image: 'https://qn.antdv.com/favicon.ico'
+    }
+    - {
+      title: 'Java SE 技术规格',
+      intro: 'Java SE Specifications',
+      link: 'https://docs.oracle.com/javase/specs/index.html',
+      image: 'https://www.oracle.com/asset/web/favicons/favicon-192.png'
+    }
+    - {
+      title: 'Scala 编程风格指南',
+      intro: '本文档翻译自 Databricks Scala Guide',
+      link: 'https://github.com/databricks/scala-style-guide/blob/master/README-ZH.md',
+      image: 'https://github.githubassets.com/favicons/favicon.svg'
     }
