@@ -161,7 +161,7 @@ footer:
 
   beian:  # The footer of China's website policy, other areas keep disable
     enable: true
-    icp_text: 粤ICP备19112237号 # ICP证号 
+    icp_text: 粤ICP备19112237号 # ICP证号
     police_text:  # 公安备案号，不填则只显示ICP
     police_code: 19112237 # 公安备案的编号，用于URL跳转查询
     police_icon: /img/police_beian.png # 公安备案的图片. 为空时不显示备案图片
@@ -331,7 +331,7 @@ archive:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  岁寒，然后知松柏之后凋也。 # 打字机内容
+  subtitle: 岁寒，然后知松柏之后凋也。 # 打字机内容
 
 #---------------------------
 # 分类归档页
@@ -341,7 +341,7 @@ category:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  君子坦荡荡，小人长戚戚。 # 打字机内容
+  subtitle: 君子坦荡荡，小人长戚戚。 # 打字机内容
   post_limit: 10  # 单个分类中折叠展示文章数的最大值，超过限制会显示 More
   order_by: '-length'  # 排序字段，前面带减号是倒序，不带减号是正序，可选项：name | length
 
@@ -353,7 +353,7 @@ tag:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  君子不器。 # 打字机内容
+  subtitle: 君子不器。 # 打字机内容
   tagcloud: # 标签云
     min_font: 15
     max_font: 30
@@ -370,10 +370,10 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  吾日三省吾身，为人谋而不忠乎？与朋友交而不信乎？传不习乎？ # 打字机内容
+  subtitle:  见贤思齐焉，见不贤而内自省也。 # 打字机内容
   avatar: /img/avatar.png # 头像
   name: Rubin
-  introduce: '兴趣比较杂，开此博客也是希望在今后的时间里能对知识有所积累，整理，精进。 加油！向前~ 🏆🏁🚧🏃' # 支持 HTML
+  introduce: '兴趣比较杂，开此博客也是希望在今后的时间里能对知识有所积累，整理，精进。 加油！向前~ 🏃' # 支持 HTML
   icons: # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，class 代表图标的 css class
     - { class: 'iconfont icon-github-fill', link: 'https://github.com/vzhougm/', tip: 'GitHub' }
     - { class: 'iconfont icon-wechat-fill', qrcode: '/img/wx.jpg' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
@@ -398,37 +398,43 @@ links:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  有朋自远方来，不亦乐乎？ # 打字机内容
+  subtitle:  有朋自远方来不亦乐乎？ # 打字机内容
   items:  # intro 与 image 可省略
     - {
       title: 'Scala 库索引',
       intro: 'The Scala Library Index',
       link: 'https://index.scala-lang.org/',
-      image: 'https://index.scala-lang.org/assets/img/apple-touch-icon.png'
+      image: '../img/scala_index.png'
     }
     - {
       title: 'Scala 文档',
       intro: 'Scala Documentation',
       link: 'https://docs.scala-lang.org/zh-cn/',
-      image: 'https://docs.scala-lang.org/resources/img/scala-spiral-3d-2-toned-down.png'
+      image: '../img/scala.png'
     }
     - {
       title: 'Akka 文档',
       intro: 'Akka Documentation',
       link: 'https://akka.io/docs/',
-      image: 'https://akka.io/resources/favicon-32x32.png'
+      image: '../img/akka.png'
     }
     - {
       title: 'Maven 仓库',
       intro: 'Maven Central Repository Search',
       link: 'https://search.maven.org/',
-      image: 'https://search.maven.org/favicon.ico?v=3'
+      image: '../img/maven_search.ico'
     }
     - {
       title: '蛙蛙工具',
       intro: '便捷的在线工具网站',
       link: 'https://www.iamwawa.cn/daxiaoxie.html',
       image: 'https://www.iamwawa.cn/Public/img/favicon.png'
+    }
+    - {
+      title: 'Be JSON',
+      intro: '在线JSON校验格式化工具',
+      link: 'https://www.bejson.com/',
+      image: 'https://www.bejson.com/static/bejson/img/qq/bejson-q.png'
     }
     - {
       title: 'Flutter 实战',
@@ -443,10 +449,16 @@ links:
       image: 'https://flutter.cn/favicon.ico'
     }
     - {
+      title: 'Vue.js',
+      intro: '渐进式 JavaScript 框架',
+      link: 'https://cn.vuejs.org/',
+      image: 'https://cn.vuejs.org//images/logo.png'
+    }
+    - {
       title: 'Ant Design Vue',
       intro: 'ant design vue 官网',
       link: 'https://www.antdv.com/docs/vue/introduce-cn/',
-      image: 'https://qn.antdv.com/favicon.ico'
+      image: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTI4cHgiIGhlaWdodD0iMTI4cHgiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Mi42ICg2NzQ5MSkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+VnVlPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI2OS42NDQxMTYlIiB5MT0iMCUiIHgyPSI2OS42NDQxMTYlIiB5Mj0iMTAwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjlDREZGIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxNDhFRkYiIG9mZnNldD0iMzcuODYwMDY4NyUiPjwvc3RvcD4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzBBNjBGRiIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9Ii0xOS44MTkxNTUzJSIgeTE9Ii0zNi43OTMxNDY0JSIgeDI9IjEzOC41NzkxOSUiIHkyPSIxNTcuNjM3NTA3JSIgaWQ9ImxpbmVhckdyYWRpZW50LTIiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjlDREZGIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwRjc4RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI2OC4xMjc5ODcyJSIgeTE9Ii0zNS42OTA1NzM3JSIgeDI9IjMwLjQ0MDA5MTQlIiB5Mj0iMTE0Ljk0MjY3OSUiIGlkPSJsaW5lYXJHcmFkaWVudC0zIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0ZBOEU3RCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRjc0QTVDIiBvZmZzZXQ9IjUxLjI2MzUxOTElIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNGNTFEMkMiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iVnVlIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5LjAwMDAwMCwgOS4wMDAwMDApIj4KICAgICAgICAgICAgPHBhdGggZD0iTTg5Ljk2LDkwLjQ4IEM3OC41OCw5My40OCA2OC4zMyw4My4zNiA2Ny42Miw4Mi40OCBMNDYuNjYwNDQ4Nyw2Mi4yMjkyMjU4IEM0NS41MDIzODQ5LDYxLjExMDMyMzYgNDQuODQyNjg0NSw1OS41NzI4ODM1IDQ0LjgyOTY5ODcsNTcuOTYyNjM5NiBMNDQuNTAzNTU2NCwxNy41MjA5OTQ4IEM0NC40OTQ4ODYxLDE2LjQ0NTg3NDQgNDQuMDUzNzcxNCwxNS40MTk1MDk1IDQzLjI3OTY4NjQsMTQuNjczMzUxNyBMMjkuNjQ1OTk5OSwxLjUzMTUzNzM3IEMyOC4wNTU0NzUsLTAuMDAxNjA1MDQwMDUgMjUuNTIzMjQyMywwLjA0NDkxMjY1ODggMjMuOTkwMDk5OSwxLjYzNTQzNzU2IEMyMy4yNzE1MTIxLDIuMzgwOTIwNjYgMjIuODcsMy4zNzYwMDgzNCAyMi44Nyw0LjQxMTQzNzQ2IEwyMi44Nyw2NC4zODY0NzUxIEMyMi44Nyw2Ny4wODA3ODkxIDIzLjk1NzIyMzMsNjkuNjYxMTA2NyAyNS44ODU0MDksNzEuNTQyOTc0OCBMNjMuNjAwNDYxNSwxMDguMzUyMDYxIEM2NS45NDY2MzIzLDExMC42NDE4NzMgNjkuNjk2MzU4NCwxMTAuNjI0NjA1IDcyLjAyMTM0MDMsMTA4LjMxMzI4MSIgaWQ9IlBhdGgtQ29weSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSIgZmlsbC1ydWxlPSJub256ZXJvIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Ni40MTUwMDAsIDU0LjgzMTE1Nykgc2NhbGUoLTEsIDEpIHRyYW5zbGF0ZSgtNTYuNDE1MDAwLCAtNTQuODMxMTU3KSAiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTY4LDkwLjExNjMxMjIgQzU2LjYyLDkzLjExNjMxMjIgNDUuNDYsODMuMzYgNDQuNzUsODIuNDggTDIzLjc5MDQ0ODcsNjIuMjI5MjI1OCBDMjIuNjMyMzg0OSw2MS4xMTAzMjM2IDIxLjk3MjY4NDUsNTkuNTcyODgzNSAyMS45NTk2OTg3LDU3Ljk2MjYzOTYgTDIxLjYzMzU1NjQsMTcuNTIwOTk0OCBDMjEuNjI0ODg2MSwxNi40NDU4NzQ0IDIxLjE4Mzc3MTQsMTUuNDE5NTA5NSAyMC40MDk2ODY0LDE0LjY3MzM1MTcgTDYuNzc1OTk5OSwxLjUzMTUzNzM3IEM1LjE4NTQ3NSwtMC4wMDE2MDUwNDAwNSAyLjY1MzI0MjMyLDAuMDQ0OTEyNjU4OCAxLjEyMDA5OTkxLDEuNjM1NDM3NTYgQzAuNDAxNTEyMTI1LDIuMzgwOTIwNjYgMy45MDIxMTg3OGUtMTMsMy4zNzYwMDgzNCAzLjkwNzk4NTA1ZS0xMyw0LjQxMTQzNzQ2IEwzLjk0MzUxMjE4ZS0xMyw2NC4zODY0NzUxIEMzLjk0NjgxMTc3ZS0xMyw2Ny4wODA3ODkxIDEuMDg3MjIzMjYsNjkuNjYxMTA2NyAzLjAxNTQwOTAzLDcxLjU0Mjk3NDggTDQwLjc4MDcwOTIsMTA4LjQwMTEwMSBDNDMuMTA2OTMwNCwxMTAuNjcxNDQ0IDQ2LjgxODAxNTEsMTEwLjY3NjUyNSA0OS4xNTA0NDQ1LDEwOC40MTI1NjEiIGlkPSJQYXRoIiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTIpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTQzLjI5ODM0ODgsMTkuMDk5MTkzMSBMMjcuNTU2NjA3OSwzLjg4MjQ2MjQ0IEMyNi43NjI0MjgxLDMuMTE0NzY5NjcgMjYuNzQwOTU2MSwxLjg0ODYyMTc3IDI3LjUwODY0ODgsMS4wNTQ0NDE5NCBDMjcuODg1NDgyNiwwLjY2NDYwNjYxMSAyOC40MDQ0NDM4LDAuNDQ0NDcyNjUxIDI4Ljk0NjYzODYsMC40NDQ0NzI2NTEgTDYwLjM5MjUwMjEsMC40NDQ0NzI2NTEgQzYxLjQ5NzA3MTYsMC40NDQ0NzI2NTEgNjIuMzkyNTAyMSwxLjMzOTkwMzE1IDYyLjM5MjUwMjEsMi40NDQ0NzI2NSBDNjIuMzkyNTAyMSwyLjk4NTgzNzUgNjIuMTczMDM5NiwzLjUwNDA3NzQyIDYxLjc4NDI1MTIsMy44ODA3OTk0MiBMNDYuMDgwMTI4NSwxOS4wOTc1MzAxIEM0NS4zMDUxNTc5LDE5Ljg0ODQ0ODggNDQuMDc0MjE2NywxOS44NDkxODQ3IDQzLjI5ODM0ODgsMTkuMDk5MTkzMSBaIiBpZD0iUGF0aCIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0zKSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+'
     }
     - {
       title: 'Java SE 技术规格',
@@ -459,4 +471,46 @@ links:
       intro: '本文档翻译自 Databricks Scala Guide',
       link: 'https://github.com/databricks/scala-style-guide/blob/master/README-ZH.md',
       image: 'https://github.githubassets.com/favicons/favicon.svg'
+    }
+    - {
+      title: 'Play',
+      intro: 'The High Velocity Web Framework',
+      link: 'https://www.playframework.com/documentation',
+      image: '../img/play.png'
+    }
+    - {
+      title: 'Slick',
+      intro: 'Slick - Documentation',
+      link: 'https://scala-slick.org/docs/',
+      image: '../img/slick-logo.png'
+    }
+    - {
+      title: 'Lagom',
+      intro: 'Lagom - Documentation',
+      link: 'https://www.lagomframework.com/documentation/',
+      image: '../img/lagom.png'
+    }
+    - {
+      title: 'Netty',
+      intro: 'Netty: Home',
+      link: 'https://netty.io/',
+      image: 'https://netty.io/images/logo.png'
+    }
+    - {
+      title: 'QUIC',
+      intro: 'QUIC Working Group',
+      link: 'https://quicwg.org/',
+      image: '../img/quic.png'
+    }
+    - {
+      title: 'MDN Web 文档',
+      intro: '源于开发者，服务开发者。',
+      link: 'https://developer.mozilla.org/zh-CN/',
+      image: 'https://developer.mozilla.org/static/img/opengraph-logo.72382e605ce3.png'
+    }
+    - {
+      title: 'Spring Cloud',
+      intro: 'Spring 微服务架构',
+      link: 'https://spring.io/projects/spring-cloud',
+      image: '../img/spring.png'
     }
