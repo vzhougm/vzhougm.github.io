@@ -500,7 +500,7 @@ links:
       title: 'QUIC',
       intro: 'QUIC Working Group',
       link: 'https://quicwg.org/',
-      image: 'https://quicwg.org/asset/badge-sq.png'
+      image: '../img/quic.png'
     }
     - {
       title: 'MDN Web 文档',
@@ -512,5 +512,5 @@ links:
       title: 'Spring Cloud',
       intro: 'Spring 微服务架构',
       link: 'https://spring.io/projects/spring-cloud',
-      image: 'https://spring.io/images/favicon.ico'
+      image: '../img/spring.png'
     }
