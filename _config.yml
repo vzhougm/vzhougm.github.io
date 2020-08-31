@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 唯重-技术❤生活
+title: 唯重 - 技术❤生活
 subtitle: ''
 description: '唯重技术博客，专注Scala、DDD、函数式编程、分布式、响应式架构技术项目实践。偶尔也会有些其他兴趣爱好的展现，如电影、读书、音乐、写作、古诗词、心理学等😄'
 keywords: Scala,Java,函数式,博客,Play,Slick,JVM,C,C++,后台,项目,Akka,Netty,网络,流,DDD,IDDD,CQRS,JPA,Spring,SpringBoot,SpringCloud,Lagom,sbt,Linux,Ubuntu,CentOS,系统,前端,TCP,UDP,HTTP,IP,心理学
