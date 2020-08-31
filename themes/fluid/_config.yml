@@ -331,7 +331,7 @@ archive:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle: 岁寒，然后知松柏之后凋也。 # 打字机内容
+  subtitle: '岁寒，然后知松柏之后凋也。' # 打字机内容
 
 #---------------------------
 # 分类归档页
@@ -341,7 +341,7 @@ category:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle: 君子坦荡荡，小人长戚戚。 # 打字机内容
+  subtitle: '君子坦荡荡，小人长戚戚。' # 打字机内容
   post_limit: 10  # 单个分类中折叠展示文章数的最大值，超过限制会显示 More
   order_by: '-length'  # 排序字段，前面带减号是倒序，不带减号是正序，可选项：name | length
 
@@ -353,7 +353,7 @@ tag:
   banner_img: /img/default.png
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle: 君子不器。 # 打字机内容
+  subtitle: '君子不器' # 打字机内容
   tagcloud: # 标签云
     min_font: 15
     max_font: 30
@@ -370,7 +370,7 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  见贤思齐焉，见不贤而内自省也。 # 打字机内容
+  subtitle: '见贤思齐焉，见不贤而内自省也。' # 打字机内容
   avatar: /img/avatar.png # 头像
   name: Rubin
   introduce: '兴趣比较杂，开此博客也是希望在今后的时间里能对知识有所积累，整理，精进。 加油！向前~ 🏃' # 支持 HTML
@@ -398,7 +398,7 @@ links:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  有朋自远方来不亦乐乎？ # 打字机内容
+  subtitle: '有朋自远方来' # 打字机内容
   items:  # intro 与 image 可省略
     - {
       title: 'Scala 库索引',
