@@ -106,7 +106,7 @@ hexo_submit_urls_to_search_engine:
   period: 900 # 提交修改时间在 900 秒内的链接
   google: 0 # 是否向Google提交，可选值：1 | 0（0：否；1：是）
   bing: 0 # 是否向bing提交，可选值：1 | 0（0：否；1：是）
-  baidu: 0 # 是否向baidu提交，可选值：1 | 0（0：否；1：是）
+  baidu: 1 # 是否向baidu提交，可选值：1 | 0（0：否；1：是）
   txt_path: submit_urls.txt ## 文本文档名， 需要推送的链接会保存在此文本文档里
   baidu_host: https://blog.oweight.com ## 在百度站长平台中注册的域名
   baidu_token: Ln7L8w0gW3fTTmdn ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!

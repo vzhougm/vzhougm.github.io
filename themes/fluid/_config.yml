@@ -398,31 +398,31 @@ links:
   banner_img: /img/default.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
-  subtitle:  友链/收藏 # 打字机内容
+  subtitle:  有朋自远方来不亦乐乎？ # 打字机内容
   items:  # intro 与 image 可省略
     - {
       title: 'Scala 库索引',
       intro: 'The Scala Library Index',
       link: 'https://index.scala-lang.org/',
-      image: 'https://index.scala-lang.org/assets/img/apple-touch-icon.png'
+      image: '../img/scala_index.png'
     }
     - {
       title: 'Scala 文档',
       intro: 'Scala Documentation',
       link: 'https://docs.scala-lang.org/zh-cn/',
-      image: 'https://docs.scala-lang.org/resources/img/scala-spiral-3d-2-toned-down.png'
+      image: '../img/scala.png'
     }
     - {
       title: 'Akka 文档',
       intro: 'Akka Documentation',
       link: 'https://akka.io/docs/',
-      image: 'https://akka.io/resources/favicon-32x32.png'
+      image: '../img/akka.png'
     }
     - {
       title: 'Maven 仓库',
       intro: 'Maven Central Repository Search',
       link: 'https://search.maven.org/',
-      image: 'https://search.maven.org/favicon.ico?v=3'
+      image: '../img/maven_search.ico'
     }
     - {
       title: '蛙蛙工具',
@@ -476,19 +476,19 @@ links:
       title: 'Play',
       intro: 'The High Velocity Web Framework',
       link: 'https://www.playframework.com/documentation',
-      image: 'https://www.playframework.com/apple-touch-icon.png'
+      image: '../img/play.png'
     }
     - {
       title: 'Slick',
       intro: 'Slick - Documentation',
       link: 'https://scala-slick.org/docs/',
-      image: 'https://scala-slick.org/resources/images/slick-logo-sm.png'
+      image: '../img/slick-logo.png'
     }
     - {
       title: 'Lagom',
       intro: 'Lagom - Documentation',
       link: 'https://www.lagomframework.com/documentation/',
-      image: 'https://www.lagomframework.com/images/ui/lagom-hero.png'
+      image: '../img/lagom.png'
     }
     - {
       title: 'Netty',
