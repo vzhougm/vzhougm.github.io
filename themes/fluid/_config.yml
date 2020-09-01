@@ -514,3 +514,9 @@ links:
       link: 'https://spring.io/projects/spring-cloud',
       image: '../img/spring.png'
     }
+    - {
+      title: 'ScalaTest',
+      intro: 'Scala生态系统中最灵活，最流行的测试工具。',
+      link: 'https://www.scalatest.org/',
+      image: '../img/scala_test.png'
+    }
