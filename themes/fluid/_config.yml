@@ -542,7 +542,7 @@ links:
       title: '极客公园',
       intro: '极客公园-推动商业新变量',
       link: 'https://www.geekpark.net/',
-      image: 'http://imgslim.geekpark.net/geekpark-icon-196-03ac430f5643fc17aba3b3f5429a287d.png'
+      image: '../img/geekpark.png'
     }
     - {
       title: '电子技术设计',

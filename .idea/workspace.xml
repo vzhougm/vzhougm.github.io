@@ -5,7 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8472ed8-e60a-4bf1-ad7b-a5c93834564b" name="Default Changelist" comment="footer">
+    <list default="true" id="b8472ed8-e60a-4bf1-ad7b-a5c93834564b" name="Default Changelist" comment="change">
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/geekpark.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/fluid/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/fluid/_config.yml" afterDir="false" />
     </list>
@@ -24,6 +25,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -35,7 +37,7 @@
       <recent name="D:\html\blog\hexo-blog\themes\fluid\source\img" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.server">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -78,9 +80,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.server" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.server" />
         <item itemvalue="npm.clean" />
       </list>
     </recent_temporary>
@@ -98,7 +100,7 @@
       <workItem from="1598840113850" duration="11820000" />
       <workItem from="1598874802252" duration="259000" />
       <workItem from="1598922357750" duration="2486000" />
-      <workItem from="1599008118408" duration="5485000" />
+      <workItem from="1599008118408" duration="6338000" />
     </task>
     <task id="LOCAL-00001" summary="title">
       <created>1598837594376</created>
@@ -177,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598874815668</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="change">
+      <created>1599036058913</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1599036058913</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,29 +240,30 @@
     <MESSAGE value="同步修改" />
     <MESSAGE value="添加静态资源" />
     <MESSAGE value="footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer" />
+    <MESSAGE value="change" />
+    <option name="LAST_COMMIT_MESSAGE" value="change" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1599034761580">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1599037361348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599034761580" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1599034761580">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599037361348" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1599037361348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599034761580" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1599034761580">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599037361348" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1599037361348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599034761580" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1599034761580">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599037361348" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1599037361348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599034761580" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598874821102">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599037361348" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1599036069043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598874821102" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599036069043" />
     <state x="764" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598922362904">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
