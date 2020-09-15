@@ -401,6 +401,12 @@ links:
   subtitle: '有朋自远方来' # 打字机内容
   items:  # intro 与 image 可省略
     - {
+      title: 'Markdown',
+      intro: 'The Scala Library Index',
+      link: 'http://www.mdeditor.com/',
+      image: '../img/scala_index.png'
+    }
+    - - {
       title: 'Scala 库索引',
       intro: 'The Scala Library Index',
       link: 'https://index.scala-lang.org/',
@@ -423,6 +429,12 @@ links:
       intro: 'Maven Central Repository Search',
       link: 'https://search.maven.org/',
       image: '../img/maven_search.ico'
+    }
+    - {
+      title: 'Geeks',
+      intro: 'A Computer Science portal for geeks.',
+      link: 'https://www.geeksforgeeks.org/',
+      image: '../img/geeks.png'
     }
     - {
       title: '蛙蛙工具',
@@ -513,4 +525,40 @@ links:
       intro: 'Spring 微服务架构',
       link: 'https://spring.io/projects/spring-cloud',
       image: '../img/spring.png'
+    }
+    - {
+      title: 'ScalaTest',
+      intro: 'Scala生态系统中最灵活，最流行的测试工具。',
+      link: 'https://www.scalatest.org/',
+      image: '../img/scala_test.png'
+    }
+    - {
+      title: 'Rust',
+      intro: '一门赋予每个人构建可靠且高效软件能力的语言。',
+      link: 'https://www.rust-lang.org/zh-CN/',
+      image: 'https://www.rust-lang.org/static/images/rust-social.jpg'
+    }
+    - {
+      title: '极客网',
+      intro: '科技使能新商业',
+      link: 'https://www.fromgeek.com/',
+      image: '../img/geek.png'
+    }
+    - {
+      title: '极客公园',
+      intro: '极客公园-推动商业新变量',
+      link: 'https://www.geekpark.net/',
+      image: '../img/geekpark.png'
+    }
+    - {
+      title: '电子技术设计',
+      intro: '电子工程师的设计灵感之源',
+      link: 'https://www.ednchina.com/',
+      image: 'https://www.ednchina.com/favicon.ico'
+    }
+    - {
+      title: 'ProgramCreek',
+      intro: 'ProgramCreek',
+      link: 'https://www.programcreek.com/',
+      image: 'https://www.programcreek.com/wp-content/themes/light/images/icon.ico'
     }
