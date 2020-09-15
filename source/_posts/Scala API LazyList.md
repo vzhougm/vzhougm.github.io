@@ -1,5 +1,5 @@
 ---
-title: LazyList
+title: Scala API LazyList
 date: 2020-09-15 19:00:00
 comments: true
 categories:
