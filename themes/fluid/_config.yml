@@ -539,22 +539,10 @@ links:
       image: 'https://www.rust-lang.org/static/images/rust-social.jpg'
     }
     - {
-      title: '极客网',
-      intro: '科技使能新商业',
-      link: 'https://www.fromgeek.com/',
-      image: '../img/geek.png'
-    }
-    - {
-      title: '极客公园',
-      intro: '极客公园-推动商业新变量',
-      link: 'https://www.geekpark.net/',
-      image: '../img/geekpark.png'
-    }
-    - {
-      title: '电子技术设计',
-      intro: '电子工程师的设计灵感之源',
-      link: 'https://www.ednchina.com/',
-      image: 'https://www.ednchina.com/favicon.ico'
+      title: 'ProcessOn',
+      intro: '一个在线协作绘图平台',
+      link: 'https://www.processon.com/diagrams',
+      image: 'https://www.processon.com/assets/imgs/logo_small.png'
     }
     - {
       title: 'ProgramCreek',
