@@ -549,4 +549,9 @@ links:
       intro: 'ProgramCreek',
       link: 'https://www.programcreek.com/',
       image: 'https://www.programcreek.com/wp-content/themes/light/images/icon.ico'
+    }- {
+      title: '在线视频转Gif',
+      intro: '免费在线视频转Gif，动图制作一键完成。',
+      link: 'https://www.apowersoft.cn/video-to-gif-online',
+      image: 'https://qncdnimg.aoscdn.com/img/favicon.png?1583114242.114'
     }
