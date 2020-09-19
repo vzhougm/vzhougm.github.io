@@ -1,7 +1,6 @@
 ---
-title: Scala API LazyList
-date: 2020-09-15 19:00:00
-comments: true
+title: Scala API List
+date: 2020-09-18 13:03:34
 categories:
  - Scala
  - 集合框架
@@ -10,169 +9,58 @@ tags:
  - scala-api
  - collection
 ---
-
 ### Introduction
-> final class LazyList[+A] extends AbstractSeq[A] with LinearSeq[A] with LinearSeqOps[A, LazyList, LazyList[A]] with IterableFactoryDefaults[A, LazyList] with Serializable
+>  sealed abstract class List[+A] extends AbstractSeq[A] with LinearSeq[A] with LinearSeqOps[A, List, List[A]] with StrictOptimizedLinearSeqOps[A, List, List[A]] with StrictOptimizedSeqOps[A, List, List[A]] with IterableFactoryDefaults[A, List] with DefaultSerializable
 
-这个类实现了一个不可变链表。我们称它为“懒”，因为仅在需要时，它才会计算它的元素。
+不可变链表的类，表示A型元素的有序集合。
 
-元素是记忆化的；也就是说，每个元素的值最多计算一次。元素是按顺序计算的，不会被跳过。换句话说，**访问尾部会先计算头部。**
+此类带有两个实现案例的类scala.Nil和scala。::，它们实现抽象成员isEmpty，head和tail。
 
-一个`LazyList`有多懒？当你有一个类型为`LazyList`的值时，你还不知道这个列表是否为空。如果你知道它是非空的，那么你也知道头已经被计算过了。但如果最后一个元素是一个`LazyList`，它是否为空是未确定的。
+此类对于后进先出（LIFO），类似堆栈的访问模式是最佳的。 
+如果您需要其他访问模式，例如随机访问或FIFO，请考虑使用一个比List更适合此访问的集合。
 
-一个`LazyList`是无限的。例如，`LazyList.from(0)`包含所有自然数0、1、2等等。对于无穷序列，某些方法(如'count'、'sum'、'max'或'min')将不会终止。
+#### 性能
+**时间：**列表具有O（1）前置和头/尾访问。 列表中元素的数量大多数为O（n）。 
+这包括基于索引的元素查找，长度，附加和反向。
 
-#### example
+**空间：**列表实现尾部列表的结构共享。 这意味着许多操作要么是零内存成本，要么是恒定内存成本。
 
 ```scala
-import scala.math.BigInt
-object Main extends App {
-  val fibs: LazyList[BigInt] =
-    BigInt(0) #:: BigInt(1) #:: fibs.zip(fibs.tail).map{ n => n._1 + n._2 }
-  fibs.take(5).foreach(println)
-}
-
-// prints
-//
-// 0
-// 1
-// 1
-// 2
-// 3
+val mainList = List(3, 2, 1)
+val with4 =    4 :: mainList  // re-uses mainList, costs one :: instance
+val with42 =   42 :: mainList // also re-uses mainList, cost one :: instance
+val shorter =  mainList.tail  // costs nothing as it uses the same 2::1::Nil instances as mainList
 ```
 
-加点额外输出信息，让我们更直观的了解其工作过程。
+##### Annotations
+`@SerialVersionUID()`
+
+##### Source
+`List.scala`
+
+##### Example
 
 ```scala
-import scala.math.BigInt
-object Main extends App {
-  val fibs: LazyList[BigInt] =
-    BigInt(0) #:: BigInt(1) #::
-      fibs.zip(fibs.tail).map{ n =>
-        println(s"Adding ${n._1} and ${n._2}")
-        n._1 + n._2
-      }
-  fibs.take(5).foreach(println)
-  fibs.take(6).foreach(println)
-}
+// Make a list via the companion object factory
+val days = List("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
 
-// prints
-//
-// 0
-// 1
-// Adding 0 and 1
-// 1
-// Adding 1 and 1
-// 2
-// Adding 1 and 2
-// 3
+// Make a list element-by-element
+val when = "AM" :: "PM" :: Nil
 
-// And then prints
-//
-// 0
-// 1
-// 1
-// 2
-// 3 前面5个元素在第一次计算中使用并保存了下来
-// Adding 2 and 3  元素6是新的所以才触发了 n._1 + n._2 操作
-// 5
-```
-
-<span style=color:red>注意，fibs的定义使用的是`val`而不是`def`。`LazyList`的记忆需要我们有地方存储，而`val`可以。</span>
-
-关于LazyList的语义进一步的说明：
-
-- 虽然LazyList改变，因为它是访问，这并不违反其不变性。一旦值被记忆化它们就不会改变。这还没有值仍有待被记忆化的“存在”，它们根本就没有被计算呢。
-
-- 我们必须谨慎值的记忆化；如果你不小心，它会消耗内存。这是因为LazyList的记忆化创建了一个类似[[scala.collection.immutable.List]]的结构。只要将其赋值给了对象，那它就从头部到尾部的数据一直保持。如果没有赋值到对象（例如，我们用def来定义LazyList），那么一旦它不再被使用，它就会消失。
-
-- 请注意，一些操作，包括[[drop]]、[[dropWhile]]、[[flatMap]]或[[collect]]可以在返回前处理大量中间元素。
-
-这里是另外一个例子。让我们开始的自然数，并在它们之间迭代。
-
-```scala
-// We'll start with a silly iteration
-def loop(s: String, i: Int, iter: Iterator[Int]): Unit = {
-  // Stop after 200,000
-  if (i < 200001) {
-    if (i % 50000 == 0) println(s + i)
-    loop(s, iter.next(), iter)
-  }
-}
-
-// Our first LazyList definition will be a val definition
-val lazylist1: LazyList[Int] = {
-  def loop(v: Int): LazyList[Int] = v #:: loop(v + 1)
-  loop(0)
-}
-
-// Because lazylist1 is a val, everything that the iterator produces is held
-// by virtue of the fact that the head of the LazyList is held in lazylist1
-val it1 = lazylist1.iterator
-loop("Iterator1: ", it1.next(), it1)
-
-// We can redefine this LazyList such that all we have is the Iterator left
-// and allow the LazyList to be garbage collected as required.  Using a def
-// to provide the LazyList ensures that no val is holding onto the head as
-// is the case with lazylist1
-def lazylist2: LazyList[Int] = {
-  def loop(v: Int): LazyList[Int] = v #:: loop(v + 1)
-  loop(0)
-}
-val it2 = lazylist2.iterator
-loop("Iterator2: ", it2.next(), it2)
-
-// And, of course, we don't actually need a LazyList at all for such a simple
-// problem.  There's no reason to use a LazyList if you don't actually need
-// one.
-val it3 = new Iterator[Int] {
-  var i = -1
-  def hasNext = true
-  def next(): Int = { i += 1; i }
-}
-loop("Iterator3: ", it3.next(), it3)
-```
-
-在前面的示例示例中，有趣的是尾巴完全起作用。  fibs的首字母为（0，1，LazyList（...）），因此tail是确定性的。 如果我们将fibs定义为仅具体知道0，则确定尾部的动作将需要对尾部进行评估，**因此计算将无法进行**，如以下代码所示：
-
-```scala
-// The first time we try to access the tail we're going to need more
-// information which will require us to recurse, which will require us to
-// recurse, which...
-lazy val sov: LazyList[Vector[Int]] = Vector(0) #:: sov.zip(sov.tail).map { n => n._1 ++ n._2 }
-```
-
-上面的fib定义会创建比所需数量更多的对象，具体取决于您可能希望如何实现。 由于以下事实可以更直接地路由到数字本身，因此以下实现提供了一种更具“成本效益”的实现：
-
-```scala
-lazy val fib: LazyList[Int] = {
-  def loop(h: Int, n: Int): LazyList[Int] = h #:: loop(n, h + n)
-  loop(1, 1)
+// Pattern match
+days match {
+  case firstDay :: otherDays =>
+    println("The first day of the week is: " + firstDay)
+  case Nil =>
+    println("There don't seem to be any week days.")
 }
 ```
 
-头，尾以及列表是否为空最初可能是未知的。 一旦对其中任何一个进行了评估，它们都是众所周知的，尽管如果尾巴是使用＃::或＃:::构建的，则其内容仍然不会被评估。 取而代之的是，将评估尾部内容的时间推迟到评估尾部的空状态，头或尾部。
-
-延迟对LazyList是否为空的评估直到需要时才允许，LazyList不急于评估过滤器调用中的任何元素。
-
-仅当进一步评估（可能永远不会！）时，任何元素才会被强制执行。
-
-```scala
-def tailWithSideEffect: LazyList[Nothing] = {
-  println("getting empty LazyList")
-  LazyList.empty
-}
-
-val emptyTail = tailWithSideEffect // prints "getting empty LazyList"
-
-val suspended = 1 #:: tailWithSideEffect // doesn't print anything
-val tail = suspended.tail // although the tail is evaluated, *still* nothing is yet printed
-val filtered = tail.filter(_ => false) // still nothing is printed
-filtered.isEmpty // prints "getting empty LazyList"
-```
+##### Note
+功能列表的特点是持久性和结构共享，因此，如果使用正确，则在某些情况下会提供可观的性能和空间消耗优势。 
+但是，请注意，对同一功能列表具有多个引用的对象（即，依赖于结构共享的对象）将使用多个列表进行序列化和反序列化，每个列表对应一个引用。 即 序列化/反序列化后，结构共享丢失。
 
 ### Value Members
-
 #### final def ++[B >: A](suffix: IterableOnce[B]): List[B]
 concat 的别名
 
@@ -207,13 +95,13 @@ appendedAll 的别名
 用另一个应用于该部分函数结果的部分函数组成该部分函数。
 
 #### def andThen[C](k: (A) => C): PartialFunction[Int, C]
-用转换函数组成此部分函数，该转换函数将应用于该部分函数的结果。
+用转换函数组成此部分函数，​​该转换函数将应用于该部分函数的结果。
 
 #### def appended[B >: A](elem: B): List[B]
 此序列的副本，其中附加了元素。
 
 #### def appendedAll[B >: A](suffix: IterableOnce[B]): List[B]
-返回一个新列表，其中包含左侧操作数中的元素，然后是右侧操作数中的元素。
+返回一个新列表，该列表包含左侧操作数中的元素，然后是右侧操作数中的元素。
 
 #### def apply(n: Int): A
 获取指定索引处的元素。
@@ -225,7 +113,7 @@ appendedAll 的别名
 从相等方法调用的方法，以便用户定义的子类可以拒绝与其他相同类型的集合相等。
 
 #### final def collect[B](pf: PartialFunction[A, B]): List[B]
-通过将部分函数应用于此列表中定义了该函数的所有元素来构建新列表。
+通过将部分函数应用于此列表中定义该函数的所有元素来构建新列表。
 
 #### def collectFirst[B](pf: PartialFunction[A, B]): Option[B]
 查找为其定义了给定局部函数的集合的第一个元素，并将局部函数应用于该元素。
@@ -276,7 +164,7 @@ appendedAll 的别名
 在应用转换函数f之后，忽略此不变序列的所有元素，而忽略由==确定的重复项。
 
 #### def drop(n: Int): List[A]
-选择除前n个元素以外的所有元素。
+选择除前n个元素外的所有元素。
 
 #### def dropRight(n: Int): List[A]
 集合的其余部分不包含最后n个元素。
@@ -330,16 +218,16 @@ AnyRef中定义的通用相等方法。
 测试谓词是否对该列表的所有元素成立。
 
 #### final def foreach[U](f: (A) => U): Unit
-将f应用于每个元素，以产生副作用注意：需要[U]参数以帮助scalac进行类型推断。
+将f应用于每个元素的副作用注意：[U]参数需要帮助scalac的类型推断。
 
 #### def groupBy[K](f: (A) => K): Map[K, List[A]]
 根据某些区分函数，将此可迭代集合划分为可迭代集合的映射。
 
 #### def groupMap[K, B](key: (A) => K)(f: (A) => B): Map[K, List[B]]
-根据区分函数功能键将此可迭代集合划分为可迭代集合的映射。
+根据标识符功能键将此可迭代集合划分为可迭代集合的映射。
 
 #### def groupMapReduce[K, B](key: (A) => K)(f: (A) => B)(reduce: (B, B) => B): Map[K, B]
-根据区分函数功能键将此可迭代集合划分为映射。
+根据标识符功能键将此可迭代集合划分为映射。
 
 #### def grouped(size: Int): Iterator[List[A]]
 在固定大小的可迭代集合中对元素进行分区。
@@ -347,20 +235,20 @@ AnyRef中定义的通用相等方法。
 #### def hashCode(): Int
 引用类型的hashCode方法。
 
-#### val head: A
-选择此列表的第一个元素。
+#### def head: A
+选择此可迭代集合的第一个元素。
 
-#### def headOption: Some[A]
+#### def headOption: Option[A]
 （可选）选择第一个元素。
 
 #### def indexOf[B >: A](elem: B): Int
 查找此序列中某个值首次出现的索引。
 
 #### def indexOf[B >: A](elem: B, from: Int): Int
-查找在此序列中某个起始索引之后或之后的某个值首次出现的索引。
+在此序列中某个起始索引之后或起始索引处查找该值首次出现的索引。
 
 #### def indexOfSlice[B >: A](that: collection.Seq[B]): Int
-查找第一个索引，其中该序列包含给定序列作为切片。
+查找该序列包含给定序列作为切片的第一个索引。
 
 #### def indexOfSlice[B >: A](that: collection.Seq[B], from: Int): Int
 在此序列包含给定序列作为切片的起始索引之后或起始索引处查找第一个索引。
@@ -421,7 +309,7 @@ AnyRef中定义的通用相等方法。
 #### def lastOption: Option[A]
 （可选）选择最后一个元素。
 
-#### def lazyZip[B](that: collection.Iterable[B]): LazyZip2[A, B, ::.this.type]
+#### def lazyZip[B](that: collection.Iterable[B]): LazyZip2[A, B, List.this.type]
 与zip类似，除了每个集合中的元素只有在对返回的LazyZip2装饰器调用严格的操作后才会使用。
 
 #### final def length: Int
@@ -473,7 +361,7 @@ AnyRef中定义的通用相等方法。
 以字符串显示此集合的所有元素。
 
 #### final def mkString(sep: String): String
-使用分隔符字符串在字符串中显示此集合的所有元素。
+使用分隔符字符串以字符串形式显示此集合的所有元素。
 
 #### final def mkString(start: String, sep: String, end: String): String
 使用开始，结束和分隔符字符串以字符串形式显示此集合的所有元素。
@@ -482,7 +370,7 @@ AnyRef中定义的通用相等方法。
 测试集合是否不为空。
 
 #### def orElse[A1 <: Int, B1 >: A](that: PartialFunction[A1, B1]): PartialFunction[A1, B1]
-将该部分功能与后备部分功能组成，该功能将在未定义此部分功能的情况下应用。
+将此部分功能与后备部分功能组成，该功能将在未定义此部分功能的情况下应用。
 
 #### def padTo[B >: A](len: Int, elem: B): List[B]
 此序列的副本，其中附加了元素值，直到达到给定的目标长度为止。
@@ -507,9 +395,6 @@ AnyRef中定义的通用相等方法。
 
 #### def product[B >: A](implicit num: math.Numeric[B]): B
 将这个集合的元素相乘。
-
-#### def productElementNames: scala.Iterator[String]
-该产品所有元素名称的迭代器。
 
 #### def reduce[B >: A](op: (B, B) => B): B
 使用指定的关联二进制运算符减少此集合的元素。
@@ -578,12 +463,11 @@ AnyRef中定义的通用相等方法。
 返回一个包含用于将该可迭代集合的大小与测试值进行比较的操作的值类。
 
 #### def slice(from: Int, until: Int): List[A]
-
 #### def sliding(size: Int, step: Int): Iterator[List[A]]
-通过在固定大小的块上传递“滑动窗口”来对元素进行分组（与分组方式不同，这与分组方式不同）。
+通过在固定大小的块上传递元素“滑动窗口”来对它们进行分组（这与对它们进行分区相反，就像分组一样）。
 
 #### def sliding(size: Int): Iterator[List[A]]
-通过在固定大小的块上传递“滑动窗口”来对元素进行分组（与分组方式不同，这与分组方式不同）。
+通过在固定大小的块上传递“滑动窗口”来对元素进行分组（与分组方式不同，这与对它们进行分区相反）。
 
 #### def sortBy[B](f: (A) => B)(implicit ord: Ordering[B]): List[A]
 根据排序对此序列进行排序，排序是通过使用转换函数对隐式给定的Ordering进行转换而得出的。
@@ -637,13 +521,13 @@ AnyRef中定义的通用相等方法。
 
 #### def toIndexedSeq: IndexedSeq[A]
 
-#### final def toIterable: ::.this.type
+#### final def toIterable: List.this.type
 
 #### final def toList: List[A]
 
 #### def toMap[K, V](implicit ev: <:<[A, (K, V)]): Map[K, V]
 
-#### final def toSeq: ::.this.type
+#### final def toSeq: List.this.type
 
 #### def toSet[B >: A]: Set[B]
 
@@ -673,7 +557,7 @@ AnyRef中定义的通用相等方法。
 #### def view: SeqView[A]
 对该集合的元素的看法。
 
-#### def withFilter(p: (A) => Boolean): WithFilter[A, []List[]]
+#### def withFilter(p: (A) => Boolean): WithFilter[A, [_]List[_]]
 创建此可迭代集合的非严格过滤器。
 
 #### def zip[B](that: IterableOnce[B]): List[(A, B)]
