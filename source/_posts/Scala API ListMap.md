@@ -9,10 +9,9 @@ tags:
  - scala-api
  - collection
 ---
-
+### Introduction
 > sealed class ListMap[K, +V] extends AbstractMap[K, V] with SeqMap[K, V] with StrictOptimizedMapOps[K, V, ListMap, ListMap[K, V]] with MapFactoryDefaults[K, V, ListMap, Iterable] with DefaultSerializable
 
-### Introduction
 这个类实现不可变映射使用基于列表的数据结构。ListMap迭代器和遍历方法查看键值对在他们第一次插入的顺序。
 
 条目存储在内部反向插入顺序，该装置的最新键是在该列表的头部。这样，如头部和尾部的方法是为O（n），而最后一个和init是O（1）。其它的操作，如在插入或取出的条目，也为O（n），这使得该集合只适合小数量的元件。
@@ -32,13 +31,13 @@ ListMap.scala
 newListMap()
 
 ### Value Members
-#### def +[V1 >: V](kv: (K, V1)): ListMap[K, V1]
+#### `def +[V1 >: V](kv: (K, V1)): ListMap[K, V1]`
 updated 的别名
 
-#### def ++[V2 >: V](xs: IterableOnce[(K, V2)]): ListMap[K, V2]
+#### `def ++[V2 >: V](xs: IterableOnce[(K, V2)]): ListMap[K, V2]`
 concat 的别名
 
-#### final def ++[B >: (K, V)](suffix: IterableOnce[B]): Iterable[B]
+#### `final def ++[B >: (K, V)](suffix: IterableOnce[B]): Iterable[B]`
 concat 的别名
 
 #### final def -(key: K): ListMap[K, V]
@@ -143,10 +142,10 @@ AnyRef中定义的通用相等方法。
 #### def find(p: ((K, V)) => Boolean): Option[(K, V)]
 查找满足谓词（如果有）的集合的第一个元素。
 
-#### def flatMap[K2, V2](f: ((K, V)) => IterableOnce[(K2, V2)]): ListMap[K2, V2]
+#### `def flatMap[K2, V2](f: ((K, V)) => IterableOnce[(K2, V2)]): ListMap[K2, V2]`
 通过对Map的所有元素应用函数并使用结果集合的元素来构建新Map。
 
-#### def flatMap[B](f: ((K, V)) => IterableOnce[B]): Iterable[B]
+#### `def flatMap[B](f: ((K, V)) => IterableOnce[B]): Iterable[B]`
 通过将函数应用于此可迭代集合的所有元素并使用所得集合的元素来构建新的可迭代集合。
 
 #### def flatten[B](implicit toIterableOnce: ((K, V)) => IterableOnce[B]): Iterable[B]
@@ -164,7 +163,7 @@ AnyRef中定义的通用相等方法。
 #### def forall(p: ((K, V)) => Boolean): Boolean
 测试谓词是否对该集合的所有元素成立。
 
-#### def foreach[U](f: ((K, V)) => U): Unit
+#### `def foreach[U](f: ((K, V)) => U): Unit`
 将f应用于每个元素的副作用注意：[U]参数需要帮助scalac的类型推断。
 
 #### def foreachEntry[U](f: (K, V) => U): Unit
@@ -176,13 +175,13 @@ AnyRef中定义的通用相等方法。
 #### def getOrElse[V1 >: V](key: K, default: => V1): V1
 返回与键关联的值，如果映射中不包含键，则返回默认值。
 
-#### def groupBy[K](f: ((K, V)) => K): Map[K, ListMap[K, V]]
+#### `def groupBy[K](f: ((K, V)) => K): Map[K, ListMap[K, V]]`
 根据某些区分函数，将此可迭代集合划分为可迭代集合的映射。
 
-#### def groupMap[K, B](key: ((K, V)) => K)(f: ((K, V)) => B): Map[K, Iterable[B]]
+#### `def groupMap[K, B](key: ((K, V)) => K)(f: ((K, V)) => B): Map[K, Iterable[B]]`
 根据标识符功能键将此可迭代集合划分为可迭代集合的映射。
 
-#### def groupMapReduce[K, B](key: ((K, V)) => K)(f: ((K, V)) => B)(reduce: (B, B) => B): Map[K, B]
+#### `def groupMapReduce[K, B](key: ((K, V)) => K)(f: ((K, V)) => B)(reduce: (B, B) => B): Map[K, B]`
 根据标识符功能键将此可迭代集合划分为映射。
 
 #### def grouped(size: Int): Iterator[ListMap[K, V]]
@@ -243,10 +242,10 @@ AnyRef中定义的通用相等方法。
 #### def lift: (K) => Option[V]
 将此部分函数转换为简单函数，返回Option结果。
 
-#### def map[K2, V2](f: ((K, V)) => (K2, V2)): ListMap[K2, V2]
+#### `def map[K2, V2](f: ((K, V)) => (K2, V2)): ListMap[K2, V2]`
 通过对Map的所有元素应用功能来构建新Map。
 
-#### def map[B](f: ((K, V)) => B): Iterable[B]
+#### `def map[B](f: ((K, V)) => B): Iterable[B]`
 通过将函数应用于此可迭代集合的所有元素来构建新的可迭代集合。
 
 #### def mapFactory: MapFactory[ListMap]
@@ -255,10 +254,10 @@ AnyRef中定义的通用相等方法。
 #### def max[B >: (K, V)](implicit ord: math.Ordering[B]): (K, V)
 查找最大的元素。
 
-#### def maxBy[B](f: ((K, V)) => B)(implicit cmp: math.Ordering[B]): (K, V)
+#### `def maxBy[B](f: ((K, V)) => B)(implicit cmp: math.Ordering[B]): (K, V)`
 查找第一个元素，该元素产生通过函数f测量的最大值。
 
-#### def maxByOption[B](f: ((K, V)) => B)(implicit cmp: math.Ordering[B]): Option[(K, V)]
+#### `def maxByOption[B](f: ((K, V)) => B)(implicit cmp: math.Ordering[B]): Option[(K, V)]`
 查找第一个元素，该元素产生通过函数f测量的最大值。
 
 #### def maxOption[B >: (K, V)](implicit ord: math.Ordering[B]): Option[(K, V)]
@@ -267,10 +266,10 @@ AnyRef中定义的通用相等方法。
 #### def min[B >: (K, V)](implicit ord: math.Ordering[B]): (K, V)
 查找最小的元素。
 
-#### def minBy[B](f: ((K, V)) => B)(implicit cmp: math.Ordering[B]): (K, V)
+#### `def minBy[B](f: ((K, V)) => B)(implicit cmp: math.Ordering[B]): (K, V)`
 查找第一个元素，该元素的最小值由函数f测量。
 
-#### def minByOption[B](f: ((K, V)) => B)(implicit cmp: math.Ordering[B]): Option[(K, V)]
+#### `def minByOption[B](f: ((K, V)) => B)(implicit cmp: math.Ordering[B]): Option[(K, V)]`
 查找第一个元素，该元素的最小值由函数f测量。
 
 #### def minOption[B >: (K, V)](implicit ord: math.Ordering[B]): Option[(K, V)]
@@ -294,7 +293,7 @@ AnyRef中定义的通用相等方法。
 #### def partition(p: ((K, V)) => Boolean): (ListMap[K, V], ListMap[K, V])
 一对，第一，所有满足谓词p的元素，第二，所有不满足谓词的元素。
 
-#### def partitionMap[A1, A2](f: ((K, V)) => Either[A1, A2]): (Iterable[A1], Iterable[A2])
+#### `def partitionMap[A1, A2](f: ((K, V)) => Either[A1, A2]): (Iterable[A1], Iterable[A2])`
 将函数f应用于可迭代集合的每个元素，并返回一对可迭代集合：第一个由f返回的值组成，这些值包装在scala.util.Left中，第二个由那些返回的值包装在scala.util.Left中。实用权。
 
 #### def product[B >: (K, V)](implicit num: math.Numeric[B]): B
@@ -303,10 +302,10 @@ AnyRef中定义的通用相等方法。
 #### def reduce[B >: (K, V)](op: (B, B) => B): B
 使用指定的关联二进制运算符减少此集合的元素。
 
-#### def reduceLeft[B >: (K, V)](op: (B, (K, V)) => B): B
+#### `def reduceLeft[B >: (K, V)](op: (B, (K, V)) => B): B`
 将二进制运算符应用于此集合的所有元素，从左到右。
 
-#### def reduceLeftOption[B >: (K, V)](op: (B, (K, V)) => B): Option[B]
+#### `def reduceLeftOption[B >: (K, V)](op: (B, (K, V)) => B): Option[B]`
 （可选）将二进制运算符应用于此集合的所有元素，从左到右。
 
 #### def reduceOption[B >: (K, V)](op: (B, B) => B): Option[B]
@@ -384,7 +383,7 @@ AnyRef中定义的通用相等方法。
 #### def takeWhile(p: ((K, V)) => Boolean): ListMap[K, V]
 接受满足谓词的元素的最长前缀。
 
-#### def tapEach[U](f: ((K, V)) => U): ListMap[K, V]
+#### `def tapEach[U](f: ((K, V)) => U): ListMap[K, V]`
 将副作用函数应用于此集合中的每个元素。
 
 #### def to[C1](factory: Factory[(K, V), C1]): C1
