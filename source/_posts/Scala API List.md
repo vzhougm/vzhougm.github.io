@@ -3,6 +3,7 @@ title: Scala API List
 date: 2020-09-18 13:03:34
 categories:
  - Scala
+ - API
  - 集合框架
 tags: 
  - scala

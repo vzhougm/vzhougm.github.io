@@ -3,6 +3,7 @@ title: slick 通用查询工具（带分页）
 date: 2020-08-30 11:15:42
 comments: true
 categories:
+ - Scala
  - Slick
 tags: 
  - scala

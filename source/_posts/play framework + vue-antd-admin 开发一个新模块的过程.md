@@ -3,7 +3,7 @@ title: play framework + vue-antd-admin 开发一个新模块的过程
 date: 2020-09-18 19:49:35
 comments: true
 categories:
- - UI框架
+ - Scala
  - Play framework
 tags: 
  - play framework
