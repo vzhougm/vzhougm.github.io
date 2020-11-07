@@ -3,6 +3,7 @@ title: maven-assembly-plugin打包加入本地lib中的jar包
 date: 2020-08-31 12:42:01
 comments: true
 categories:
+ - 工具
  - 编译工具
  - Maven
 tags: 

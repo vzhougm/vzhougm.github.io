@@ -8,6 +8,7 @@ categories:
 tags: 
  - scala
  - slick
+ - tool
 ---
 # 1. 首先定义一个Model特质
 在指定ID查询和删除时用，根据实际情况定义字段。
