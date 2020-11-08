@@ -6,10 +6,144 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8472ed8-e60a-4bf1-ad7b-a5c93834564b" name="Default Changelist" comment="日志+1">
+      <change afterPath="$PROJECT_DIR$/themes/fluid/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/README_en.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/languages/de.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/languages/en.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/languages/ja.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/languages/zh-CN.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/404.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/archive-list.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/beian.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/changyan.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/disqus.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/gitalk.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/livere.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/remark42.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/twikoo.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/utterances.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/valine.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/css.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/head.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/nav.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/paginator.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/plugins/analytics.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/plugins/local-search.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/plugins/math.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/plugins/mermaid.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/plugins/nprogress.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/plugins/typed.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/post-meta.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/scripts.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/search.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/statistics.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/toc.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/about.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/archive.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/categories.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/category.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/layout.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/links.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/page.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/post.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/tag.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/layout/tags.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/events/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/events/lib/footnote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/events/lib/hello.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/events/lib/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/events/lib/lazyload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/events/lib/merge-configs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/events/lib/preset-configs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/events/lib/version.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/filters/locals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/filters/post-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/generators/local-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/generators/pages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/helpers/export-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/helpers/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/helpers/url.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/helpers/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/helpers/wordcount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/tags/button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/tags/checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/tags/group-image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/tags/label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/tags/note.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/utils/join-path.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/scripts/utils/object.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_functions/base.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_mixins/base.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_about/about.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_archive/archive.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/_widget/banner.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/_widget/board.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/_widget/copy-btn.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/_widget/footer.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/_widget/footnote.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/_widget/header.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/_widget/qrcode.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/_widget/scroll-btn.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/_widget/search.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/base.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/color-schema.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/inline.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/keyframes.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_base/rewrite.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_category/categories.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_category/category.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_index/index.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_links/links.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_post/post.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_post/tag_plugin.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_tag/tag.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/_tag/tags.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_pages/pages.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/_variables/base.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/gitalk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/css/main.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/akka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/geek.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/geekpark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/geeks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/lagom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/maven_search.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/police_beian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/quic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/scala.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/scala_index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/scala_test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/slick-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/spring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/wx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/img/ypy_logo5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/js/boot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/js/color-schema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/js/debouncer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/js/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/js/lazyload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/js/leancloud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/js/local-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/lib/hint/hint.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/fluid/source/xml/local-search.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/maven-assembly-plugin 打包加入本地lib中的jar包.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/maven-assembly-plugin 打包加入本地lib中的jar包.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/slick 通用查询工具（带分页）.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/slick 通用查询工具（带分页）.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/服务端连接客户端串口设备的最佳（Chrome App）方案.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/服务端连接客户端串口设备（Chrome App）方案.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/fluid/_config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,17 +164,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/_posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/themes/fluid/source" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\html\blog\hexo-starter\themes\fluid\source" />
       <recent name="D:\html\blog\hexo-blog\source\_posts" />
       <recent name="D:\html\blog\hexo-blog\themes\fluid\source\img" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.server">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -83,9 +218,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.server" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.server" />
         <item itemvalue="npm.clean" />
       </list>
     </recent_temporary>
@@ -412,26 +547,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="日志+1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="704" y="355" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1604798317548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="704" y="355" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604798317548" />
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599528361624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599528361624" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1604411786157">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604798549234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604411786157" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1604411786157">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604798549234" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1604801256158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604411786157" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1604411786157">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604801256158" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1604801256156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604411786157" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1604411786157">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604801256156" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1604801256156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604411786157" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604801256156" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1604801256158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604801256158" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604411196299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -444,6 +587,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="223" width="598" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598849613981" />
+    <state x="726" y="419" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604802299595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="419" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604802299595" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1598837319815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
