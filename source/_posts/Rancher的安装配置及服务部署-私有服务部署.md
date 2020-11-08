@@ -4,6 +4,8 @@ date: 2020-08-31 12:49:16
 comments: true
 categories:
  - 容器
+ - Docker
+ - Rancher
 tags: 
  - docker
  - rancher

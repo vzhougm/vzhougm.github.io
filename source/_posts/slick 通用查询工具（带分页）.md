@@ -3,10 +3,12 @@ title: slick 通用查询工具（带分页）
 date: 2020-08-30 11:15:42
 comments: true
 categories:
+ - Scala
  - Slick
 tags: 
  - scala
  - slick
+ - tool
 ---
 # 1. 首先定义一个Model特质
 在指定ID查询和删除时用，根据实际情况定义字段。
