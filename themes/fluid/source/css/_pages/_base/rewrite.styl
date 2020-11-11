@@ -27,23 +27,20 @@
     border-width 0
     outline 0
 
-  &.scrolling-navbar
-    will-change background, padding
-    -webkit-transition background 0.5s ease-in-out, padding 0.5s ease-in-out
-    transition background 0.5s ease-in-out, padding 0.5s ease-in-out
+  @media (min-width: 600px)
+    &.scrolling-navbar
+      padding-top 12px
+      padding-bottom 12px
+      -webkit-transition background 0.5s ease-in-out, padding 0.5s ease-in-out
+      transition background 0.5s ease-in-out, padding 0.5s ease-in-out
 
-    @media (min-width: 600px)
-      &
-        padding-top 12px
-        padding-bottom 12px
+    &.scrolling-navbar .navbar-nav > li
+      -webkit-transition-duration 1s
+      transition-duration 1s
 
-      & .navbar-nav > li
-        -webkit-transition-duration 1s
-        transition-duration 1s
-
-    &.top-nav-collapse
-      padding-top 5px
-      padding-bottom 5px
+  &.scrolling-navbar.top-nav-collapse
+    padding-top 5px
+    padding-bottom 5px
 
   .dropdown-menu
     font-size 0.875rem
@@ -420,19 +417,6 @@ input[type=checkbox]
     color var(--link-hover-color)
     background-color var(--link-hover-bg-color)
 
-// Rewrite fancybox
-a.fancybox:hover
-  text-decoration none
-
-// Rewrite nprogress
-$npColor = theme-config("fun_features.progressbar.color", "#29d")
-#nprogress
-  .bar
-    height theme-config-unit("fun_features.progressbar.height_px", 3, "px") !important
-    background-color $npColor !important
-  .peg
-    box-shadow 0 0 14px $npColor, 0 0 8px $npColor !important
-
 // Rewrite valine
 .v[data-class=v]
   .status-bar, .veditor, .vinput, .vbtn, p, pre code
@@ -451,9 +435,3 @@ $npColor = theme-config("fun_features.progressbar.color", "#29d")
   .gt-comment-body
     color var(--text-color) !important
     transition color .2s ease-in-out
-
-// Rewrite remark42
-#remark-km423lmfdslkm34-back
-  z-index 1030
-#remark-km423lmfdslkm34-node
-  z-index 1031

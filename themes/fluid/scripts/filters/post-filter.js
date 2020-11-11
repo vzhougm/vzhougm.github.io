@@ -6,28 +6,13 @@
 hexo.extend.filter.register('before_generate', function() {
   this._bindLocals();
 
-  const allPages = this.locals.get('pages');
-  allPages.data.map((page) => {
-    if (page.comment !== true) {
-      page.comments = false;
-    }
-    return page;
-  });
-  this.locals.set('pages', allPages);
+  const all_posts = this.locals.get('posts');
+  const hide_posts = all_posts.filter(post => post.hide);
+  const normal_posts = all_posts.filter(post => !post.hide);
 
-  const allPosts = this.locals.get('posts');
-  allPosts.data.map((post) => {
-    if (post.comment === false) {
-      post.comments = false;
-    }
-    return post;
-  });
-  const hidePosts = allPosts.filter(post => post.hide);
-  const normalPosts = allPosts.filter(post => !post.hide);
-
-  this.locals.set('all_posts', allPosts);
-  this.locals.set('hide_posts', hidePosts);
-  this.locals.set('posts', normalPosts);
+  this.locals.set('all_posts', all_posts);
+  this.locals.set('hide_posts', hide_posts);
+  this.locals.set('posts', normal_posts);
 });
 
 const original_post_generator = hexo.extend.generator.get('post');

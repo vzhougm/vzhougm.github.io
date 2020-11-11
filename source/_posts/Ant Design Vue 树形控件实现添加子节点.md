@@ -108,7 +108,6 @@ addMenu() {
     this.findMenu(root, this.currentSelectTreeData)
     this.findMenuObj.children.push(newChild)
   }
-  // 此函数是 Ant Design 树形控件，可搜索树 自带的方法。
   generateList(this.treeData)
 },
 // 查找菜单在树的节点位置
