@@ -5,10 +5,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8472ed8-e60a-4bf1-ad7b-a5c93834564b" name="Default Changelist" comment="更新主题">
-      <change afterPath="$PROJECT_DIR$/_config.fluid.yml" afterDir="false" />
+    <list default="true" id="b8472ed8-e60a-4bf1-ad7b-a5c93834564b" name="Default Changelist" comment="版本还原">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/languages/zh-CN.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/fluid/languages/zh-CN.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.fluid.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/fluid/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/languages/de.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/archive-list.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/remark42.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/twikoo.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/plugins/nprogress.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/scripts/events/lib/preset-configs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/scripts/filters/locals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/scripts/helpers/export-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/source/css/gitalk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/source/js/boot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/source/js/events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/source/js/leancloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/source/js/plugins.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1gqKpD1YaKu6ZezjymY62MmlcDc" />
   <component name="ProjectViewState">
@@ -40,7 +55,7 @@
       <recent name="D:\html\blog\hexo-blog\themes\fluid\source\img" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.server">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -83,9 +98,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.server" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.server" />
         <item itemvalue="npm.clean" />
       </list>
     </recent_temporary>
@@ -432,26 +447,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604798549234" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1604802696612">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605085532079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604802696612" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1604802696612">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605085532079" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605085532078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604802696612" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1604802696612">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605085532078" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605085532078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604802696612" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1604802696612">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605085532078" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605085532078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604802696612" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604802334635">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605085532078" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605085303801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604802334635" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605085303801" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1605085536123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605085536123" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604802782790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
