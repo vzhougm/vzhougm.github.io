@@ -17,6 +17,7 @@ Vue 常用的UI框架，table组件在 websocket通讯时，大量数据过来�
 
 # 效果对比
 **测试机器：[NRP-D915I4 超高频分体式读写器](http://www.enruipu.com/?c=msg&id=2130)**
+
 单天线模式，2500~3600ms读500张卡，测试环境非严苛，严苛环境下读卡性能更强悍。
 ## 卡顿
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201202193659585.gif)
