@@ -1,5 +1,5 @@
 ---
-title: Vue UI框架（ant-design-vue、iview、element-ui ） table组件，websocket通讯，高速、大批量数据处理视图卡顿问题
+title: Ant Design Vue table组件 websocket通讯，高速、大批量数据处理，视图卡顿问题
 date: 2020-12-02 19:51:46
 comments: true
 categories:
