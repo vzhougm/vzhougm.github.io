@@ -7,22 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b8472ed8-e60a-4bf1-ad7b-a5c93834564b" name="Default Changelist" comment="版本还原">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.fluid.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/fluid/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/languages/de.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/archive-list.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/remark42.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/comments/twikoo.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/fluid/layout/_partial/footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/layout/_partial/plugins/nprogress.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/scripts/events/lib/preset-configs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/scripts/filters/locals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/scripts/helpers/export-config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/source/css/gitalk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/source/js/boot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/source/js/events.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/source/js/leancloud.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/fluid/source/js/plugins.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +39,7 @@
       <recent name="D:\html\blog\hexo-blog\themes\fluid\source\img" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.server">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -98,10 +82,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.server" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.clean" />
+        <item itemvalue="npm.server" />
       </list>
     </recent_temporary>
   </component>
@@ -149,6 +133,7 @@
       <workItem from="1603947784616" duration="3933000" />
       <workItem from="1604385799826" duration="4663000" />
       <workItem from="1604732091319" duration="512000" />
+      <workItem from="1606909886153" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="title">
       <created>1598837594376</created>
@@ -374,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604802329991</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="版本还原">
+      <created>1605085567242</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1605085567242</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +424,8 @@
     <MESSAGE value="调整分类" />
     <MESSAGE value="日志+1" />
     <MESSAGE value="更新主题" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新主题" />
+    <MESSAGE value="版本还原" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本还原" />
   </component>
   <component name="WindowStateProjectService">
     <state x="704" y="355" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1604798317548">
@@ -447,26 +440,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604798549234" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605085532079">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605089607964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605085532079" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605085532078">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605089607964" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605089607964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605085532078" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605085532078">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605089607964" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605089607964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605085532078" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605085532078">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605089607964" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605089607964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605085532078" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605085303801">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605089607964" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605085594029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605085303801" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605085594029" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1605085536123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
