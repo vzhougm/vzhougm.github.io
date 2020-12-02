@@ -1,5 +1,5 @@
 ---
-title: 服务端连接客户端串口设备的最佳（Chrome App）方案
+title: 服务端连接客户端串口设备（Chrome App）方案
 date: 2020-09-11 21:57:25
 comments: true
 categories:
