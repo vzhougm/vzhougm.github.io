@@ -6,10 +6,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8472ed8-e60a-4bf1-ad7b-a5c93834564b" name="Default Changelist" comment="add+1">
-      <change afterPath="$PROJECT_DIR$/source/_posts/DIV滚动条自动滚动到最底部的两种方法.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/JVM规范阅读：Java 虚拟机结构.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/JVM规范阅读：徒手解析class文件.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_config.fluid.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：1. 基本数据类型.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：10. 类.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：11. 类模板.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：12. 继承.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：13. 泛型.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：14. 异常.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：15. IO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：16. 文件.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：17. 内存管理.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：18. 数据结构.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：19. 位操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：2. 运算符.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：20. STL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：3. 控制语句.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：4. 函数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：5. 函数模板.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：6. 数组和指针.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：7. 字符串.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：8. 容器.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/c&amp;c++/basis/C&amp;C++：9. 预处理.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Akka Actors入门案例解析.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/akka/Akka Actors入门案例解析.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Android TCP通讯.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/android/Android TCP通讯.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Ant Design Vue table组件 websocket通讯，高速、大批量数据处理，视图卡顿问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/vue/Ant Design Vue table组件 websocket通讯，高速、大批量数据处理，视图卡顿问题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Ant Design Vue 树形控件实现添加子节点.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/vue/Ant Design Vue 树形控件实现添加子节点.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DIV滚动条自动滚动到最底部的两种方法.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/html/DIV滚动条自动滚动到最底部的两种方法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/JS ArrayBuffer 数据获取与转换.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/js/JS ArrayBuffer 数据获取与转换.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/JVM规范阅读：Java 虚拟机结构.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/java/jvm/JVM规范阅读：Java 虚拟机结构.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/JVM规范阅读：徒手解析class文件.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/java/jvm/JVM规范阅读：徒手解析class文件.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Netty 多协议的动态切换.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/netty/Netty 多协议的动态切换.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Netty 执行命令带 Future返回.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/netty/Netty 执行命令带 Future返回.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Rancher的安装配置及服务部署-私有服务部署.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/other/Rancher的安装配置及服务部署-私有服务部署.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Scala API LazyList.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/scala/api/Scala API LazyList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Scala API List.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/scala/api/Scala API List.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Scala API ListMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/scala/api/Scala API ListMap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Scala API学习（翻译）笔记总览.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/scala/api/Scala API学习（翻译）笔记总览.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/Scala：写一个好用的Tree工具.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/scala/Scala：写一个好用的Tree工具.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/maven-assembly-plugin 打包加入本地lib中的jar包.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/other/maven-assembly-plugin 打包加入本地lib中的jar包.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/play framework + vue-antd-admin 开发一个新模块的过程.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/play/play framework + vue-antd-admin 开发一个新模块的过程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/slick 通用查询工具（带分页）.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/scala/slick/slick 通用查询工具（带分页）.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/vue组件 - select组件（动态数据，显示默认对象信息，返回选中对象ID）.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/vue/vue组件 - select组件（动态数据，显示默认对象信息，返回选中对象ID）.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/vue组件 - 对象显示组件（根据ID获取对象信息，指定属性显示）.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/vue/vue组件 - 对象显示组件（根据ID获取对象信息，指定属性显示）.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/一个分帧解码程序（Netty）.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/netty/一个分帧解码程序（Netty）.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/服务端连接客户端串口设备（Chrome App）方案.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/other/服务端连接客户端串口设备（Chrome App）方案.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/fluid/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/fluid/source/lib/hint/hint.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/fluid/source/lib/hint/hint.min.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +65,9 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1gqKpD1YaKu6ZezjymY62MmlcDc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,18 +77,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/themes/fluid/source" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/_posts/c&amp;c++" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\html\blog\hexo-starter\source\_posts\c&amp;c++\basis" />
+      <recent name="D:\html\blog\hexo-starter\source\_posts\c&amp;c++" />
+      <recent name="D:\html\blog\hexo-starter\source\_posts\scala\slick" />
+      <recent name="D:\html\blog\hexo-starter\source\_posts\other" />
+      <recent name="D:\html\blog\hexo-starter\source\_posts\play" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\html\blog\hexo-starter\source\_posts\c&amp;c++" />
       <recent name="D:\html\blog\hexo-starter\themes\fluid\source" />
       <recent name="D:\html\blog\hexo-blog\source\_posts" />
       <recent name="D:\html\blog\hexo-blog\themes\fluid\source\img" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.server">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -85,9 +139,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.server" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.server" />
         <item itemvalue="npm.clean" />
       </list>
     </recent_temporary>
@@ -474,22 +528,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604798549234" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1607057867618">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1607182383112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607057867618" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1607057867618">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607182383112" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1607182383112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607057867618" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1607057867617">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607182383112" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1607182383112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607057867617" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1607057867618">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607182383112" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1607182383112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607057867618" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607182383112" />
+    <state x="748" y="221" key="RollbackChangesDialog" timestamp="1607177186589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="748" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607177186589" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606911092287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
