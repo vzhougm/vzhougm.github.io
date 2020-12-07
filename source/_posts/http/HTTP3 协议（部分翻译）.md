@@ -8,10 +8,9 @@ categories:
 tags: 
  - http
  - http3
- - qpack
 ---
 
-## 协议信息
+## 文档信息
 
 > Workgroup: QUIC
 > Internet-Draft: draft-ietf-quic-http
@@ -21,7 +20,6 @@ tags:
 > Author: M. Bishop, Ed.Akamai
 
 原文：[Hypertext Transfer Protocol Version 3 (HTTP/3)](https://quicwg.org/base-drafts/draft-ietf-quic-http.html)
-
 
 
 ## 6.1. 双向流
@@ -262,24 +260,81 @@ MAX_PUSH_ID Frame {
 # 8. 错误处理
 ## 8.1. HTTP / 3 错误代码
 定义以下错误代码供突然终止流，中止流读取或立即关闭HTTP / 3连接时使用。
-| 代码 | 描述 |
-|:--|:--|
-|H3_NO_ERROR（0x100） |没错 当需要关闭连接或流但没有错误要发信号时使用此方法。|
-|H3_GENERAL_PROTOCOL_ERROR（0x101） |对等方违反了协议要求，其方式与更具体的错误代码不匹配，或者端点拒绝使用更具体的错误代码。|
-|H3_INTERNAL_ERROR（0x102） |HTTP堆栈中发生内部错误。|
-|H3_STREAM_CREATION_ERROR（0x103） |端点检测到其对等方创建了它将不接受的流。|
-|H3_CLOSED_CRITICAL_STREAM（0x104） |HTTP / 3连接所需的流已关闭或重置。|
-|H3_FRAME_UNEXPECTED（0x105） |接收到当前状态或当前流中不允许的帧。|
-|H3_FRAME_ERROR（0x106） |收到不符合布局要求或尺寸无效的框架。|
-|H3_EXCESSIVE_LOAD（0x107） |端点检测到其对等方正在表现出可能产生过多负载的行为。|
-|H3_ID_ERROR（0x108） |Stream ID或Push ID使用不正确，例如超过限制，减少限制或被重用。|
-|H3_SETTINGS_ERROR（0x109） |端点在SETTINGS帧的有效载荷中检测到错误。|
-|H3_MISSING_SETTINGS（0x10a） |在控制流的开始未接收到SETTINGS帧。|
-|H3_REQUEST_REJECTED（0x10b） |服务器拒绝了请求而不执行任何应用程序处理。|
-|H3_REQUEST_CANCELLED（0x10c） |该请求或其响应（包括推送响应）被取消。|
-|H3_REQUEST_INCOMPLETE（0x10d） |客户端的流终止，但不包含完整的请求。|
-|H3_CONNECT_ERROR（0x10f） |响应于CONNECT请求而建立的TCP连接被重置或异常关闭。|
-|H3_VERSION_FALLBACK（0x110） |无法通过HTTP / 3提供请求的操作。对等方应通过HTTP / 1.1重试。|
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th align="left">代码</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">H3_NO_ERROR（0x100）</td>
+<td align="left">没错 当需要关闭连接或流但没有错误要发信号时使用此方法。</td>
+</tr>
+<tr>
+<td align="left">H3_GENERAL_PROTOCOL_ERROR（0x101）</td>
+<td align="left">对等方违反了协议要求，其方式与更具体的错误代码不匹配，或者端点拒绝使用更具体的错误代码。</td>
+</tr>
+<tr>
+<td align="left">H3_INTERNAL_ERROR（0x102）</td>
+<td align="left">HTTP堆栈中发生内部错误。</td>
+</tr>
+<tr>
+<td align="left">H3_STREAM_CREATION_ERROR（0x103）</td>
+<td align="left">端点检测到其对等方创建了它将不接受的流。</td>
+</tr>
+<tr>
+<td align="left">H3_CLOSED_CRITICAL_STREAM（0x104）</td>
+<td align="left">HTTP / 3连接所需的流已关闭或重置。</td>
+</tr>
+<tr>
+<td align="left">H3_FRAME_UNEXPECTED（0x105）</td>
+<td align="left">接收到当前状态或当前流中不允许的帧。</td>
+</tr>
+<tr>
+<td align="left">H3_FRAME_ERROR（0x106）</td>
+<td align="left">收到不符合布局要求或尺寸无效的框架。</td>
+</tr>
+<tr>
+<td align="left">H3_EXCESSIVE_LOAD（0x107）</td>
+<td align="left">端点检测到其对等方正在表现出可能产生过多负载的行为。</td>
+</tr>
+<tr>
+<td align="left">H3_ID_ERROR（0x108）</td>
+<td align="left">Stream ID或Push ID使用不正确，例如超过限制，减少限制或被重用。</td>
+</tr>
+<tr>
+<td align="left">H3_SETTINGS_ERROR（0x109）</td>
+<td align="left">端点在SETTINGS帧的有效载荷中检测到错误。</td>
+</tr>
+<tr>
+<td align="left">H3_MISSING_SETTINGS（0x10a）</td>
+<td align="left">在控制流的开始未接收到SETTINGS帧。</td>
+</tr>
+<tr>
+<td align="left">H3_REQUEST_REJECTED（0x10b）</td>
+<td align="left">服务器拒绝了请求而不执行任何应用程序处理。</td>
+</tr>
+<tr>
+<td align="left">H3_REQUEST_CANCELLED（0x10c）</td>
+<td align="left">该请求或其响应（包括推送响应）被取消。</td>
+</tr>
+<tr>
+<td align="left">H3_REQUEST_INCOMPLETE（0x10d）</td>
+<td align="left">客户端的流终止，但不包含完整的请求。</td>
+</tr>
+<tr>
+<td align="left">H3_CONNECT_ERROR（0x10f）</td>
+<td align="left">响应于CONNECT请求而建立的TCP连接被重置或异常关闭。</td>
+</tr>
+<tr>
+<td align="left">H3_VERSION_FALLBACK（0x110）</td>
+<td align="left">无法通过HTTP / 3提供请求的操作。对等方应通过HTTP / 1.1重试。</td>
+</tr>
+</tbody>
+</table>
+</div>
 0x1f * N + 0x21保留N的非负整数值格式的错误代码，以执行将未知错误代码视为等同于H3_NO_ERROR的要求（第9节）。当实现应该发送H3_NO_ERROR时，应从该空间中选择一个错误代码。
 
 # 9. HTTP / 3的扩展
